@@ -1,0 +1,170 @@
+body{
+  background-color: #555d5e;
+  color:black;
+  padding:0px;
+  margin:0px;
+
+}
+
+/*
+Nav Bar
+*/
+
+nav ul {
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  margin:0px;
+  background-color: #17695c;
+}
+nav ul li{
+  display:block;
+}
+
+nav ul li a{
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color:white;
+  display:block;
+}
+
+nav ul li a:hover{
+  background-color: #4d9685;
+}
+
+/*
+Intro
+*/
+
+.welcomeTitle{
+  font-size: 40px;
+  color:#00362e;
+}
+.intro{
+  text-align: center;
+  background-image: url(../images/duff.jpg);
+
+  background-size:cover;
+  background-position: bottom;
+  padding:20px;
+
+}
+
+.search{
+  margin-top:50px;
+}
+
+input[type=text]{
+  padding: 10px;
+  border:none;
+  width:50%;
+}
+input:focus {
+  outline:none;
+}
+
+button{
+  border-radius: 0px;
+  border:none;
+  padding:12px;
+  font-size:80%;
+  background-color: #278a7b;
+}
+.advanced{
+  background-color: #217569;
+
+}
+
+button:hover{
+  background-color: #4d9685;
+}
+
+/*
+Main Content
+*/
+.main h2{
+  background-color: #ccd7db;
+  margin:0px;
+  padding:10px;
+  text-align: left;
+}
+
+.Items{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin:0;
+  padding:0;
+  background-color: #748187;
+
+}
+
+.Items li{
+  width:250px;
+  height:180px;
+  margin:20px;
+  padding:0px;
+  background-color: white;
+  background-image:url(../images/Gear.jpg);
+
+}
+/*
+.Items li:hover{
+  opacity:.5;
+}
+*/
+.desc{
+  background-color:white;
+  position:absolute;
+  padding:0px;
+  margin:0px;
+  
+}
+
+.Items li p, h3{
+  background-color: darkgrey;
+  margin:0px;
+  padding:5px;
+  padding-left: 10px;
+}
+
+.Items li h3{
+  background-image: url(../images/brushedAluminum.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+.hiddenDesc{
+  display:none;
+}
+.titleThing:hover .hiddenDesc{
+  display:block;
+  margin:0px;
+
+
+}
+
+footer{
+  background-color:#383636;
+  margin:0px;
+  color:#969394;
+}
+
+footer h1{
+  margin:0px;
+  padding-left:10px;
+}
+
+@media(min-width:900px){
+
+  .content{
+    width:900px;
+  margin:auto;
+  }
+
+}
